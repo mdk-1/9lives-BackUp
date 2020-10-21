@@ -234,7 +234,7 @@ public class MenuHandler : MonoBehaviour
     }
     public void SelectMoon()
     {
-        catName = "WhiteCat";
+        catName = "PaleCat";
         SceneManager.LoadScene(2);
     }
     public void SelectFran()

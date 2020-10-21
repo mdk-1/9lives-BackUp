@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 2f99177660f30c644852a309331929ac
+guid: 28f5e4ffdab906f40aa0b21668310a54
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3028521239298056132
-    second: climb_sheet_0
-  - first:
-      213: 5309810141683036966
-    second: climb_sheet_1
-  - first:
-      213: -9031118335302409747
-    second: climb_sheet_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,12 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 35
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,70 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: climb_sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 156
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cf16177508770a20800000000000000
-      internalID: 3028521239298056132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: climb_sheet_1
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 0
-        width: 121
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 623b8c7f03c30b940800000000000000
-      internalID: 5309810141683036966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: climb_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 381
-        y: 16
-        width: 119
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de168c319b50ba280800000000000000
-      internalID: -9031118335302409747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
