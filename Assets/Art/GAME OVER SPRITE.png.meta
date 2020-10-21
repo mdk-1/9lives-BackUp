@@ -1,0 +1,317 @@
+fileFormatVersion: 2
+guid: d35abcf3fdedc3b479fafd032364dda8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7658381986627879534
+    second: GAME OVER SPRITE_0
+  - first:
+      213: -8139125065977537343
+    second: GAME OVER SPRITE_1
+  - first:
+      213: -3592983575613900541
+    second: GAME OVER SPRITE_2
+  - first:
+      213: 5521978277394799813
+    second: GAME OVER SPRITE_3
+  - first:
+      213: 5639706040040163469
+    second: GAME OVER SPRITE_4
+  - first:
+      213: -540439348627551610
+    second: GAME OVER SPRITE_5
+  - first:
+      213: 5629098886378666867
+    second: GAME OVER SPRITE_6
+  - first:
+      213: 8295464108708146463
+    second: GAME OVER SPRITE_7
+  - first:
+      213: -602851325396373565
+    second: GAME OVER SPRITE_8
+  - first:
+      213: 7017929994319779451
+    second: GAME OVER SPRITE_9
+  - first:
+      213: -6590637727052218374
+    second: GAME OVER SPRITE_10
+  - first:
+      213: 4813006816941391352
+    second: GAME OVER SPRITE_11
+  - first:
+      213: 4222979258202260692
+    second: GAME OVER SPRITE_12
+  - first:
+      213: 8886428551608706857
+    second: GAME OVER SPRITE_13
+  - first:
+      213: 2253117471245624633
+    second: GAME OVER SPRITE_14
+  - first:
+      213: -209615029083827178
+    second: GAME OVER SPRITE_15
+  - first:
+      213: -5374076937106698456
+    second: GAME OVER SPRITE_16
+  - first:
+      213: -6675878078545365505
+    second: GAME OVER SPRITE_17
+  - first:
+      213: 5623108286893979752
+    second: GAME OVER SPRITE_18
+  - first:
+      213: -4819244399125356233
+    second: GAME OVER SPRITE_19
+  - first:
+      213: 2228991676747107171
+    second: GAME OVER SPRITE_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GAME OVER SPRITE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 296
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d7bc4b826f7b590800000000000000
+      internalID: -7658381986627879534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER SPRITE_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 630
+        width: 297
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc5eeb10e40c0f80800000000000000
+      internalID: -8139125065977537343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER SPRITE_2
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 611
+        width: 363
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30978b37978232ec0800000000000000
+      internalID: -3592983575613900541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER SPRITE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 229
+        width: 333
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc5a819cf102ac40800000000000000
+      internalID: 5521978277394799813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER SPRITE_4
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 198
+        width: 333
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88083253c2444e40800000000000000
+      internalID: 5639706040040163469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER SPRITE_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 227
+        width: 333
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a496a9649ff78f0800000000000000
+      internalID: -540439348627551610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
