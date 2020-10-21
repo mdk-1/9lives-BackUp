@@ -311,8 +311,6 @@ MonoBehaviour:
   - {fileID: 375400842}
   - {fileID: 441954971}
   - {fileID: 607121841}
-  - {fileID: 0}
-  - {fileID: 607121841}
 --- !u!1 &607121841
 GameObject:
   m_ObjectHideFlags: 0
