@@ -6,7 +6,7 @@ public class PlaneManager : MonoBehaviour
 {
     public GameObject plane;
     public Vector3 TargetplanePos;
-    private float planeSpeed = 10f;
+    private float planeSpeed = 20f;
     private bool planeMove =  false;
     public void OnTriggerEnter2D(Collider2D other)
     {
