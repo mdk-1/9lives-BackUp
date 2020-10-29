@@ -1,7 +1,22 @@
 fileFormatVersion: 2
-guid: 3d9b4e32d93ff484cad8322f79f08144
+guid: d39c148c1f1d3fd4e85ea036c29150d0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5784912229135916733
+    second: cat lady_0
+  - first:
+      213: 3018369661145427523
+    second: cat lady_1
+  - first:
+      213: -2003087027663790959
+    second: cat lady_2
+  - first:
+      213: 8599968834436982881
+    second: cat lady_3
+  - first:
+      213: -3001697988158241186
+    second: cat lady_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -45,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,7 +124,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cat lady_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 500
+        width: 262
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3416a853afcd7bfa0800000000000000
+      internalID: -5784912229135916733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat lady_1
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 487
+        width: 244
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ea36df63763e920800000000000000
+      internalID: 3018369661145427523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat lady_2
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 487
+        width: 280
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c18ed06fa9334e0800000000000000
+      internalID: -2003087027663790959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat lady_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 9
+        width: 244
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168eb00271a395770800000000000000
+      internalID: 8599968834436982881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat lady_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 15
+        width: 262
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56c2dc5593d756d0800000000000000
+      internalID: -3001697988158241186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
