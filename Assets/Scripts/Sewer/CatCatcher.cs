@@ -14,12 +14,14 @@ public class CatCatcher : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 100f;
 
+
     public float catPoint1;
     public float catPoint2;
-    public float catPointCountdown1 = 4;
-    public float catPointCountdown2 = 2;
-    public float a = 1;
-    public float test;
+    public float catPointCountdown = 2;
+    public float catPointReset = 2;
+    public float catPointTest;
+    public float zigga = 10;
+    public bool activate = false;
 
     public float distance = 5;
     public float minDistance = 1;
@@ -32,6 +34,7 @@ public class CatCatcher : MonoBehaviour
         dir = 1;
         distance = Vector2.Distance(transform.position, player.transform.position);
 
+
     }
     // Update is called once per frame
     void Update()
@@ -39,41 +42,36 @@ public class CatCatcher : MonoBehaviour
     {
         SpawnDirection();
         TurnArouncCatcher();
-
+        if (dir == 1)
+        {
+            catSR.flipX = false;
+        }
+        if (dir == -1)
+        {
+            catSR.flipX = true;
+        }
         transform.position = new Vector2(transform.position.x + Time.deltaTime * dir * moveSpeed, transform.position.y);
     }
 
     private void TurnArouncCatcher()
     {
-        catPointCountdown1 -= Time.deltaTime;
-        catPointCountdown2 -= Time.deltaTime;
+        catPointCountdown -= Time.deltaTime;
+        catPoint2 = transform.position.x;
+        catPointTest = catPoint1 - transform.position.x;
 
-        if (catPointCountdown1 <= 0)
+        if (catPointCountdown <= 0)
         {
-            catPointCountdown1 = 3;
+            catPointCountdown = catPointReset;
             catPoint1 = transform.position.x;
 
         }
-        if (catPointCountdown2 <= 0)
+      
+        if (catPointTest <= zigga && catPointTest >= -zigga)
         {
-            catPointCountdown2 = 4;
-            catPoint2 = transform.position.x;
-
-        }
-        test = catPoint2 - catPoint1;
-        if (test <= 10 && test >= -10)
-        {
-            catPoint2 = 1000;
-            if (dir == 1)
-            {
-                dir = -1;
-                catSR.flipX = true;
-            }
-            else if (dir == -1)
-            {
-                dir = 1;
-                catSR.flipX = false;
-            }
+            activate = true;
+            catPointCountdown = 5;
+            dir *= -1;
+            catPoint1 = 2000;
         }
     }
 
@@ -86,12 +84,11 @@ public class CatCatcher : MonoBehaviour
             if (transform.position.x < 0)
             {
                 dir = 1;
-                catSR.flipX = false;
             }
             if (transform.position.x > 0)
             {
                 dir = -1;
-                catSR.flipX = true;
+
             }
 
         }

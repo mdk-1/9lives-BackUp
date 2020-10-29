@@ -92,7 +92,7 @@ public class Platforms : MonoBehaviour
         platforms[0].transform.position = new Vector2(platforms[0].transform.position.x + Time.deltaTime * platformDir * -1 * platformSpeed, platforms[0].transform.position.y);
         platforms[1].transform.position = new Vector2(platforms[1].transform.position.x + Time.deltaTime *0.8f*platformDir * platformSpeed, platforms[1].transform.position.y);
         platforms[2].transform.position = new Vector2(platforms[2].transform.position.x + Time.deltaTime *0.7f* platformDir * -1 * platformSpeed, platforms[2].transform.position.y);
-        if (platforms[0].transform.position.x < -45)
+        if (platforms[0].transform.position.x < -35)
         {
             platformDir = -1;
         }
