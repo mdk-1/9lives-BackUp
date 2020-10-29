@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Spawner;
+//using Spawner;
 
 public class CatCatcher : MonoBehaviour
 {

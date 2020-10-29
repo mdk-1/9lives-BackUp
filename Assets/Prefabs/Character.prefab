@@ -70,14 +70,15 @@ GameObject:
   m_Component:
   - component: {fileID: 5619653295709708749}
   - component: {fileID: 5619653295709708750}
+  - component: {fileID: 8236708003809601555}
   - component: {fileID: 5619653295709708748}
   - component: {fileID: 5619653295709708751}
+  - component: {fileID: 529805027}
   - component: {fileID: 5619653295709708744}
   - component: {fileID: 5619653295709708745}
   - component: {fileID: 5619653295709708746}
   - component: {fileID: 5742569623314590450}
   - component: {fileID: 9155043186422194195}
-  - component: {fileID: 529805027}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -94,7 +95,7 @@ Transform:
   m_GameObject: {fileID: 5619653295709708747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 5619653294876609945}
   - {fileID: 5619653295159475800}
@@ -139,7 +140,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -151,6 +152,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8236708003809601555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5619653295709708747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5221f7d62955e7498a97bb78118f0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalHearts: 9
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  heartFull: {fileID: 21300000, guid: 07df7ce9d228b4c4a94f6865169d5cd0, type: 3}
+  heartEmpty: {fileID: 21300000, guid: a34686778b753fe4f8a32eeaa7f211a0, type: 3}
 --- !u!114 &5619653295709708748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,10 +189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418e539d2fbea164cbbb40a36ec881c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 100
+  runSpeed: 110
+  jump: 0
+  crouch: 0
   controller: {fileID: 5619653295709708751}
   animator: {fileID: 9155043186422194195}
-  climbableObjects: {fileID: 0}
 --- !u!114 &5619653295709708751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +245,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   isFalling: 0
+--- !u!114 &529805027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5619653295709708747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7428afaa9ea5cd45a2cd70baf3688ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useSpriteSheet: WhiteCat
 --- !u!50 &5619653295709708744
 Rigidbody2D:
   serializedVersion: 4
@@ -316,16 +356,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &529805027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5619653295709708747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7428afaa9ea5cd45a2cd70baf3688ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useSpriteSheet: BlackCat

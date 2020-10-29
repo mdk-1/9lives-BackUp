@@ -9,12 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SplashScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenuScene.unity
     guid: c8b8ad5687a20e64fbb2a7746d845434
   - enabled: 1
     path: Assets/Scenes/IntroScene.unity
     guid: ee35ddaa10faf384aade70a1f55615e8
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/RooftopLevelOne.unity
     guid: 31f40f7dfc58ebb4cb783a91883c7b97
+  - enabled: 1
+    path: Assets/Scenes/Sewers.unity
+    guid: 13e34f267e1ff894490c4c6adac88069
+  - enabled: 1
+    path: Assets/Scenes/ParkLevelThree.unity
+    guid: 8e5a7017f97845f4293645ae5c7e74ee
+  - enabled: 1
+    path: Assets/Scenes/BossFightScene.unity
+    guid: 87d643d50b7adf24aa3bec127fb85a97
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 96da0f76c764fef4dbed64fe6f1eaebf
   m_configObjects: {}
