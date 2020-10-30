@@ -12,31 +12,35 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        for (int i = 0; i < hearts.Length; i++)
+        if (GameManager.instance!=null)
         {
+            for (int i = 0; i < hearts.Length; i++)
+            {
 
-            if (GameManager.instance.health > totalHearts)
-            {
-                GameManager.instance.health = totalHearts;
-            }
+                if (GameManager.instance.health > totalHearts)
+                {
+                    GameManager.instance.health = totalHearts;
+                }
 
-            if (i < GameManager.instance.health)
-            {
-                hearts[i].sprite = heartFull;
-            }
-            else
-            {
-                hearts[i].sprite = heartEmpty;
-            }
+                if (i < GameManager.instance.health)
+                {
+                    hearts[i].sprite = heartFull;
+                }
+                else
+                {
+                    hearts[i].sprite = heartEmpty;
+                }
 
-            if (i < totalHearts)
-            {
-                hearts[i].enabled = true;
-            }
-            else
-            {
-                hearts[i].enabled = false;
+                if (i < totalHearts)
+                {
+                    hearts[i].enabled = true;
+                }
+                else
+                {
+                    hearts[i].enabled = false;
+                }
             }
         }
+        
     }
 }
