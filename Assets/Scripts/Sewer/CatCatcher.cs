@@ -66,10 +66,10 @@ public class CatCatcher : MonoBehaviour
 
         }
       
-        if (catPointTest <= zigga && catPointTest >= -zigga)
+        if (catPointTest <= zigga && catPointTest >= -zigga&&transform.position.y>-22)
         {
             activate = true;
-            catPointCountdown = 5;
+            catPointCountdown = 1;
             dir *= -1;
             catPoint1 = 2000;
         }
