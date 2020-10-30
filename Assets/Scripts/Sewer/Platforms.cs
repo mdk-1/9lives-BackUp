@@ -7,15 +7,17 @@ public class Platforms : MonoBehaviour
     #region Timer
     [Header("Timers")]
     [SerializeField, Tooltip("Timer for States")]
-    private float countdownTimer = 10;
+    public float countdownTimer = 10;
     #endregion
     #region Platforms
     [Header("Platforms")]
     [SerializeField, Tooltip("Assign to Platform")]
     private GameObject[] platforms;
 
+
     public int platformDir = 0;
     private float platformSpeed = 10f;
+
 
     #endregion
     #region State Machine
@@ -70,11 +72,11 @@ public class Platforms : MonoBehaviour
     IEnumerator HorizontalState()
     {
         //loop while in state
-        while (currentState==State.Horizontal)
+        while (currentState == State.Horizontal)
         {
             PlatformHorizontal();
 
-            if (countdownTimer<=0)
+            if (platformDir==20)
             {
                 currentState = State.Vertical;
                 countdownTimer = 20;
@@ -90,13 +92,13 @@ public class Platforms : MonoBehaviour
     {
 
         platforms[0].transform.position = new Vector2(platforms[0].transform.position.x + Time.deltaTime * platformDir * -1 * platformSpeed, platforms[0].transform.position.y);
-        platforms[1].transform.position = new Vector2(platforms[1].transform.position.x + Time.deltaTime *0.8f*platformDir * platformSpeed, platforms[1].transform.position.y);
-        platforms[2].transform.position = new Vector2(platforms[2].transform.position.x + Time.deltaTime *0.7f* platformDir * -1 * platformSpeed, platforms[2].transform.position.y);
+        platforms[1].transform.position = new Vector2(platforms[1].transform.position.x + Time.deltaTime * 0.8f * platformDir * platformSpeed, platforms[1].transform.position.y);
+        platforms[2].transform.position = new Vector2(platforms[2].transform.position.x + Time.deltaTime * 0.7f * platformDir * -1 * platformSpeed, platforms[2].transform.position.y);
         if (platforms[0].transform.position.x < -35)
         {
             platformDir = -1;
         }
-        if (platforms[0].transform.position.x >5)
+        if (platforms[0].transform.position.x > 5)
         {
             platformDir = 1;
         }
