@@ -12,7 +12,7 @@ public class Platforms : MonoBehaviour
     #region Platforms
     [Header("Platforms")]
     [SerializeField, Tooltip("Assign to Platform")]
-    private GameObject[] platforms;
+    private GameObject[] platforms=null;
 
 
     public int platformDir = 0;

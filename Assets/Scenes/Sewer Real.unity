@@ -292,7 +292,6 @@ GameObject:
   - component: {fileID: 249721241}
   - component: {fileID: 249721240}
   - component: {fileID: 249721242}
-  - component: {fileID: 249721243}
   m_Layer: 0
   m_Name: cat catcher_0
   m_TagString: Untagged
@@ -378,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249721235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 28.4, z: 918.7176}
+  m_LocalPosition: {x: -0.5, y: 9.5, z: 918.7176}
   m_LocalScale: {x: 0.44972, y: 0.44972, z: 0.44972}
   m_Children: []
   m_Father: {fileID: 1914739244}
@@ -472,22 +471,6 @@ MonoBehaviour:
   - {fileID: 1279550909}
   - {fileID: 1185142156}
   fishUI: {fileID: 0}
---- !u!114 &249721243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249721235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe418000f31ce642842357cf44bd756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1057763383}
-  headCollider: {fileID: 249721241}
-  bloodSplat: {fileID: 1996451317242445463, guid: 421998ad131c9f3429e048c690e943e6,
-    type: 3}
 --- !u!1 &303103237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,7 +2451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &913898249
 Transform:
   m_ObjectHideFlags: 0
@@ -2547,6 +2530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishUI: {fileID: 1344507876}
+  nextFish: {fileID: 1333974065}
 --- !u!61 &913898252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3654,7 +3638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1333974066
 Transform:
   m_ObjectHideFlags: 0
@@ -3733,6 +3717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishUI: {fileID: 1344507876}
+  nextFish: {fileID: 0}
 --- !u!61 &1333974069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5032,6 +5017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishUI: {fileID: 1344507876}
+  nextFish: {fileID: 913898248}
 --- !u!1 &3008085670307814549
 GameObject:
   m_ObjectHideFlags: 0

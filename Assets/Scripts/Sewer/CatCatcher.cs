@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using Spawner;
+using UnityEngine.SceneManagement;
+
 
 public class CatCatcher : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class CatCatcher : MonoBehaviour
 
     public float distance = 5;
     public float minDistance = 1;
+
 
 
     private void Start()
@@ -65,8 +67,8 @@ public class CatCatcher : MonoBehaviour
             catPoint1 = transform.position.x;
 
         }
-      
-        if (catPointTest <= zigga && catPointTest >= -zigga&&transform.position.y>-22)
+
+        if (catPointTest <= zigga && catPointTest >= -zigga && transform.position.y > -22)
         {
             activate = true;
             catPointCountdown = 1;
@@ -91,6 +93,16 @@ public class CatCatcher : MonoBehaviour
 
             }
 
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "PLayer")
+        {
+            if (GameManager.instance.health > 1)
+            {
+                GameManager.instance.health -= 1;
+            }
         }
     }
 }
