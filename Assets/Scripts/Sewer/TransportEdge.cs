@@ -7,23 +7,26 @@ public class TransportEdge : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] spawnPoints;
-    public FishUI fishUI;
     int spawn = 0;
-  
+
+
     private void Start()
     {
         spawn = Random.Range(0, spawnPoints.Length);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if  (collision.gameObject.tag == "Bound")
+        if (collision.gameObject.tag == "Bound")
         {
 
             transform.position = spawnPoints[spawn].transform.position;
             spawn = Random.Range(0, spawnPoints.Length);
         }
-      
-
     }
+
+
+
 }
+

@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
+/// <summary>
+/// Defines all Cat Catcher Movements and Damages.  Cat Catcher will run in a direction. if the cat catcher hits a boundary 
+/// and gets stuck,cat catcher will turn around
+/// If cat catcher gets close to player cat catcher will chase player
+/// if cat catcher hits player, player takes damage, animation occurs and sound occurs
+/// </summary>
 public class CatCatcher : MonoBehaviour
 {
     private SpriteRenderer catSR;
-
     public GameObject player;
-
     [SerializeField, Tooltip("1=Right,-1=Left")]
     private int dir = 1;
     [SerializeField]
@@ -27,6 +30,17 @@ public class CatCatcher : MonoBehaviour
     public float distance = 5;
     public float minDistance = 1;
 
+    public float damage = 0;
+    public GameObject bloodSplat;
+
+    public float killCountDown;
+    public float killCountDownReset;
+    public AudioClip bloodSplatSound;
+    public AudioSource audiosource;
+
+    public float chasePlayerDistance;
+
+
 
 
     private void Start()
@@ -35,6 +49,9 @@ public class CatCatcher : MonoBehaviour
 
         dir = 1;
         distance = Vector2.Distance(transform.position, player.transform.position);
+        killCountDown = 0;
+        killCountDownReset = 0.9f;
+        chasePlayerDistance = 1;
 
 
     }
@@ -52,7 +69,18 @@ public class CatCatcher : MonoBehaviour
         {
             catSR.flipX = true;
         }
-        transform.position = new Vector2(transform.position.x + Time.deltaTime * dir * moveSpeed, transform.position.y);
+      
+        if ((Vector2.Distance(player.transform.position, this.transform.position) < chasePlayerDistance))
+        {
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.transform.position.x, transform.position.y), moveSpeed * Time.deltaTime);
+        }
+        else
+        {
+            transform.position = new Vector2(transform.position.x + Time.deltaTime * dir * moveSpeed, transform.position.y);
+        }
+        
+       
+        killCountDown -= Time.deltaTime;
     }
 
     private void TurnArouncCatcher()
@@ -95,14 +123,23 @@ public class CatCatcher : MonoBehaviour
 
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "PLayer")
+        if (other.gameObject.CompareTag("Player"))
         {
-            if (GameManager.instance.health > 1)
+
+            Instantiate(bloodSplat, transform.position, Quaternion.identity);
+            
+            if (killCountDown<=0)
             {
-                GameManager.instance.health -= 1;
+                killCountDown = killCountDownReset;
+                damage++;
+                audiosource.PlayOneShot(bloodSplatSound, 0.75f);
+                
             }
+          
+           
         }
     }
 }
+

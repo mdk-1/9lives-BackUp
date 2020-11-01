@@ -12,11 +12,21 @@ public class Platforms : MonoBehaviour
     #region Platforms
     [Header("Platforms")]
     [SerializeField, Tooltip("Assign to Platform")]
-    private GameObject[] platforms=null;
+    private GameObject[] platforms = null;
+    public GameObject[] fishies = null;
+
+
+    public AudioSource blingSource;
+    public AudioClip blingClip;
 
 
     public int platformDir = 0;
-    private float platformSpeed = 10f;
+    private float platformSpeed = 20f;
+
+    public bool escapeCat;
+
+
+
 
 
     #endregion
@@ -25,21 +35,13 @@ public class Platforms : MonoBehaviour
     [SerializeField, Tooltip("What the Current State is?")]
     private State currentState;
 
-    private enum State
-    {
-        Still,
-        Horizontal,
-        Vertical,
-        Tippy,
-    }
 
-
-    #endregion
     void InitialiseVariables()
     {
         countdownTimer = 10;
         currentState = State.Still;
         platformDir = 1;
+
     }
     private void Start()
     {
@@ -47,11 +49,21 @@ public class Platforms : MonoBehaviour
         NextState();
 
     }
+    private enum State
+    {
+        Still,
+        Horizontal,
+        Escape,
+    }
+
+
+    #endregion
+
     private void Update()
     {
         countdownTimer -= Time.deltaTime;
     }
-    #region StateMachine States
+
     IEnumerator StillState()
     {
         //loop while in state
@@ -62,6 +74,8 @@ public class Platforms : MonoBehaviour
             {
                 currentState = State.Horizontal;
                 countdownTimer = 40;
+                blingSource.PlayOneShot(blingClip, 2);
+                fishies[0].SetActive(true);
             }
 
 
@@ -76,9 +90,33 @@ public class Platforms : MonoBehaviour
         {
             PlatformHorizontal();
 
-            if (platformDir==20)
+            if (escapeCat)
             {
-                currentState = State.Vertical;
+                currentState = State.Escape;
+                countdownTimer = 20;
+                platformDir *= -1;
+            }
+
+
+            yield return 0;//returns to reset loop
+        }
+        NextState(); //switches to next state as determined by if condition above
+    }
+    IEnumerator EscapeState()
+    {
+        //loop while in state
+        while (currentState == State.Escape)
+        {
+
+            platforms[0].transform.position = new Vector2(platforms[0].transform.position.x + Time.deltaTime * platformDir * -1 * platformSpeed, platforms[0].transform.position.y);
+            platforms[1].transform.position = new Vector2(platforms[1].transform.position.x + Time.deltaTime * 0.8f * platformDir * platformSpeed, platforms[1].transform.position.y);
+            platforms[2].transform.position = new Vector2(platforms[2].transform.position.x + Time.deltaTime * 2 * platformDir * -1 * platformSpeed, platforms[2].transform.position.y);
+
+
+
+            if (countdownTimer >= 100)
+            {
+                currentState = State.Still;
                 countdownTimer = 20;
             }
 
@@ -93,50 +131,17 @@ public class Platforms : MonoBehaviour
 
         platforms[0].transform.position = new Vector2(platforms[0].transform.position.x + Time.deltaTime * platformDir * -1 * platformSpeed, platforms[0].transform.position.y);
         platforms[1].transform.position = new Vector2(platforms[1].transform.position.x + Time.deltaTime * 0.8f * platformDir * platformSpeed, platforms[1].transform.position.y);
-        platforms[2].transform.position = new Vector2(platforms[2].transform.position.x + Time.deltaTime * 0.7f * platformDir * -1 * platformSpeed, platforms[2].transform.position.y);
-        if (platforms[0].transform.position.x < -35)
+        platforms[2].transform.position = new Vector2(platforms[2].transform.position.x + Time.deltaTime * 2 * platformDir * -1 * platformSpeed, platforms[2].transform.position.y);
+        if (platforms[0].transform.position.x < -50)
         {
             platformDir = -1;
         }
-        if (platforms[0].transform.position.x > 5)
+        if (platforms[0].transform.position.x > 50)
         {
             platformDir = 1;
         }
     }
 
-    IEnumerator VerticalState()
-    {
-        //loop while in state
-        while (currentState == State.Vertical)
-        {
-
-            if (true)
-            {
-
-            }
-
-
-            yield return 0;//returns to reset loop
-        }
-        NextState(); //switches to next state as determined by if condition above
-    }
-    IEnumerator TippyState()
-    {
-        //loop while in state
-        while (currentState == State.Tippy)
-        {
-
-            if (true)
-            {
-
-            }
-
-
-            yield return 0;//returns to reset loop
-        }
-        NextState(); //switches to next state as determined by if condition above
-    }
-    #endregion
     void NextState()
     {
         string methodName = currentState.ToString() + "State";
@@ -146,5 +151,5 @@ public class Platforms : MonoBehaviour
                                     System.Reflection.BindingFlags.Instance);
         StartCoroutine((IEnumerator)info.Invoke(this, null));
     }
-
+    
 }
