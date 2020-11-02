@@ -12,9 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance!=null)
-        {
-            for (int i = 0; i < hearts.Length; i++)
+        for (int i = 0; i < hearts.Length; i++)
             {
 
                 if (GameManager.instance.health > totalHearts)
@@ -40,7 +38,6 @@ public class PlayerHealth : MonoBehaviour
                     hearts[i].enabled = false;
                 }
             }
-        }
+     }
         
-    }
 }
