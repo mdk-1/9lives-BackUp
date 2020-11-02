@@ -24,8 +24,8 @@ EditorBuildSettings:
     path: Assets/Scenes/ParkLevelThree.unity
     guid: 8e5a7017f97845f4293645ae5c7e74ee
   - enabled: 1
-    path: Assets/Scenes/BossFightScene.unity
-    guid: 87d643d50b7adf24aa3bec127fb85a97
+    path: Assets/Scenes/BossFight.unity
+    guid: 05544335fd62f7f49b0beef0a141488a
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: 96da0f76c764fef4dbed64fe6f1eaebf

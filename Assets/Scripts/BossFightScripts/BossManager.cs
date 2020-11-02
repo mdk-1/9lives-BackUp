@@ -107,25 +107,13 @@ public class BossManager : MonoBehaviour
         {
             currentPoint++;
         }
+
         if (currentPoint >= patrolPoints.Length)
         {
             currentPoint = 0;    //reset it to zero
         }
-        this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(patrolPoints[currentPoint].position.x, transform.position.y), aiSpeed * Time.deltaTime);
 
-        //transform.position = new Vector3(Mathf.PingPong(boundary.xMin, boundary.xMax), transform.position.y, transform.position.z);
-        /*float distance = Vector2.Distance(transform.position, waypoint[index].transform.position); //adding position and waypoint index into distance variable
-        if (distance < minDistance) //if distance is less than minimum distance (if not near gameobject to consider)
-        {
-            index = Random.Range(0, waypoint.Length); //bounce between random waypoints
-        
-        }
-        //rotate sprite and move in direction of next waypoint
-        Vector2 dir = waypoint[index].transform.position - this.transform.position; //caculate direction to face against next waypoint
-        if (dir.magnitude > .05f) //if direction magnitude is greater than distance
-        {
-            transform.Translate(dir.normalized * aiSpeed * Time.deltaTime, Space.World); //move to next waypoint
-        }*/
+        this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(patrolPoints[currentPoint].position.x, transform.position.y), aiSpeed * Time.deltaTime);
     }
     public void OnAiDeath()
     {

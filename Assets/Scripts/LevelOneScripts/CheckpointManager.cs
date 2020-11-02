@@ -10,7 +10,7 @@ public class CheckpointManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (GameManager.instance.health > 1)
+            if (GameManager.instance.health >= 1)
             {
                 GameManager.instance.health -= 1;
                 other.transform.position = new Vector3(currentCheckpoint.transform.position.x, currentCheckpoint.transform.position.y, other.transform.position.z);

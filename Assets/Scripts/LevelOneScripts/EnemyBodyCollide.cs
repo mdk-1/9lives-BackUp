@@ -28,7 +28,7 @@ public class EnemyBodyCollide : MonoBehaviour
             if (playerInvuln == false)
             {
                 headCollider.enabled = false;
-                if (GameManager.instance.health > 1)
+                if (GameManager.instance.health >= 1)
                 {
                     GameManager.instance.health -= 1;
                     Instantiate(bloodSplat, transform.position, Quaternion.identity);
