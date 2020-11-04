@@ -7,13 +7,15 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject sewerClosed;
     public GameObject sewerOpen;
+    public static bool sewerTriggered = false;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             //handle outro dialogue/level transition here
             sewerClosed.SetActive(false);
-            sewerOpen.SetActive(true);            
+            sewerOpen.SetActive(true);
+            sewerTriggered = true;
         }
     }
     public void OnTriggerExit2D(Collider2D other)

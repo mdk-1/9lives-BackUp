@@ -12,7 +12,6 @@ public class EnemyManager : MonoBehaviour
     public float minDistance; // variable to hold a distance in float - use to calculate distance between gameObjects
     public int index = 0; // varible to hold index in int - used for navigating between waypoints
     public float chasePlayerDistance = 20f; // variable to hold distance in float - used later for chase state
-    private float timeOfDeath = 3f;
     private bool faceLeft = false;
 
     //reference to sprite transform
@@ -120,12 +119,6 @@ public class EnemyManager : MonoBehaviour
         }
         NextState();
     }
-    
-    private IEnumerator deathState()
-    {
-        yield return new WaitForSeconds(timeOfDeath);
-        Destroy(this.gameObject);
-    }
     #endregion
 
     #region methods
@@ -150,8 +143,7 @@ public class EnemyManager : MonoBehaviour
     {
         Instantiate(bloodSplat, transform.position, Quaternion.identity);
         anim.SetBool("IsRun", false);
-        anim.SetBool("IsDead", true);
-        StartCoroutine(deathState());
+        Destroy(this.gameObject);
     }
     public void OnAiHit()
     {

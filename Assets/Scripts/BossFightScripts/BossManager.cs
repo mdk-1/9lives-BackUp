@@ -83,14 +83,6 @@ public class BossManager : MonoBehaviour
         
         NextState();
     }
-    
-    private IEnumerator deathState()
-    {
-        yield return new WaitForSeconds(timeOfDeath);
-        Destroy(this.gameObject);
-        //load outro scene here
-        SceneManager.LoadScene(8);
-    }
     #endregion
 
     #region methods
@@ -112,9 +104,8 @@ public class BossManager : MonoBehaviour
     {
         //death animation
         Instantiate(bloodSplat, transform.position, Quaternion.identity);
-        anim.SetBool("IsWalking", false);
-        anim.SetBool("IsAttacking", false);
-        StartCoroutine(deathState());
+        Destroy(this.gameObject);
+        SceneManager.LoadScene(8);
     }
     public void OnAiHit()
     {
