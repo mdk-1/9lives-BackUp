@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossManager : MonoBehaviour
 {
@@ -16,9 +17,6 @@ public class BossManager : MonoBehaviour
 
     //reference to animator
     public Animator anim;
-    //reference to rigidbody
-    private Rigidbody2D aiRigidBody;
-
     //gameObject references
     //referencing player object
     public GameObject player; 
@@ -46,7 +44,6 @@ public class BossManager : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        aiRigidBody = GetComponent<Rigidbody2D>();
         NextState(); // calling next state method on start to initialise AI states
     }
     //patrol state ()
@@ -66,20 +63,15 @@ public class BossManager : MonoBehaviour
         NextState();
 
     }
-    //chase state ()
     private IEnumerator attackState()
     {
-        catThrow = true;
         while (state == State.attack)
         {
-            anim.SetBool("IsWalking", false);
             anim.SetBool("IsAttacking", true);
-            //throw cats here - instanciate cat prefeb
-            
-            if (catThrow == true)
+            if ((Vector2.Distance(player.transform.position, this.transform.position) < chasePlayerDistance))
             {
-                Instantiate(bossBlackCat, new Vector2(bossCatSpawner.transform.position.x, bossCatSpawner.transform.position.y), Quaternion.identity);
-                catThrow = false;
+                catThrow = true;
+                CatAttack();
                 yield return new WaitForSeconds(bossCatSpawnCoolDown);
             }
 
@@ -97,6 +89,7 @@ public class BossManager : MonoBehaviour
         yield return new WaitForSeconds(timeOfDeath);
         Destroy(this.gameObject);
         //load outro scene here
+        SceneManager.LoadScene(8);
     }
     #endregion
 
@@ -117,6 +110,7 @@ public class BossManager : MonoBehaviour
     }
     public void OnAiDeath()
     {
+        //death animation
         Instantiate(bloodSplat, transform.position, Quaternion.identity);
         anim.SetBool("IsWalking", false);
         anim.SetBool("IsAttacking", false);
@@ -125,6 +119,14 @@ public class BossManager : MonoBehaviour
     public void OnAiHit()
     {
         state = State.patrol;
+    }
+    public void CatAttack()
+    {
+        if (catThrow == true)
+        {
+            Instantiate(bossBlackCat, new Vector2(bossCatSpawner.transform.position.x, bossCatSpawner.transform.position.y), Quaternion.identity);
+            catThrow = false;
+        }
     }
     public void NextState() //method to change aiState
     {

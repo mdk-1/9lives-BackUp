@@ -422,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 586438614}
   dialogueText: {fileID: 835484187}
+  levelToLoad: RooftopLevelOne
 --- !u!4 &158979507
 Transform:
   m_ObjectHideFlags: 0

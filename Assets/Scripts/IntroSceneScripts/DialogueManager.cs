@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText; //variable for 'speaker' name to be displayed
     public Text dialogueText; //variable for 'dialogue' to be displayed
+    public string levelToLoad;
 
     private Queue<string> sentences; //variable to hold and track all dialogue displayed -- using queue as string
 
@@ -61,7 +62,7 @@ public class DialogueManager : MonoBehaviour
     }
     void StartGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(levelToLoad);
     }
 }
 
