@@ -129,20 +129,22 @@ public class CatCatcher : MonoBehaviour
         {
 
             Instantiate(bloodSplat, transform.position, Quaternion.identity);
-            audiosource.PlayOneShot(bloodSplatSound, 0.75f);
+            
 
             if (killCountDown<=0)
             {
+                audiosource.PlayOneShot(bloodSplatSound, 0.75f);
+                killCountDown = killCountDownReset;
+                damage++;
+
 
                 if (GameManager.instance.health >= 1)
                 {
                     GameManager.instance.health -= 1;
-                    killCountDown = killCountDownReset;
-                    damage++;
                 }
                 else
                 {
-                 
+    
                     SceneManager.LoadScene(7);
                 }
            
