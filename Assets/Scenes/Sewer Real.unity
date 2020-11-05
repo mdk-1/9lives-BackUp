@@ -265,6 +265,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -254
       objectReference: {fileID: 0}
+    - target: {fileID: 8239931681490339977, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 113.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681490339977, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 263.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8239931681490339982, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -280,16 +290,83 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 8239931681490339983, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 24.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 849.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -140.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 152.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8239931681573254270, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_Text
-      value: A thundering sound is heard from overhead as the sewer pipes rupture.
+      value: a thundering sound is heard from overhead as the sewer pipes rupture.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254270, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254270, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8f16188dac8c9234c84e128c601376b0,
+        type: 3}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 831
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 126.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 161.6
       objectReference: {fileID: 0}
     - target: {fileID: 8239931682428340426, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_Text
-      value: Our hero narrowly avoids the catcatcher's relenetless pursuit.
+      value: our hero narrowly avoids the catcatcher's relenetless pursuit.
       objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340426, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340426, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8f16188dac8c9234c84e128c601376b0,
+        type: 3}
     - target: {fileID: 8239931682478725496, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_Sprite
@@ -410,6 +487,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8f16188dac8c9234c84e128c601376b0,
+        type: 3}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Text
+      value: continue >
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73af00e3649012642be71851c86ab1a3, type: 3}
@@ -2059,6 +2167,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -254
       objectReference: {fileID: 0}
+    - target: {fileID: 8239931681490339977, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 263.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681490339977, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 113.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8239931681490339982, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2084,18 +2202,85 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8239931681490339983, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 956.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -155.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254265, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 211.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8239931681573254270, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_Text
-      value: Our feline hero spashes through the sewer and washes up from a storm
+      value: our feline hero spashes through the sewer and washes up from a storm
         drain into the local park.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931681573254270, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8f16188dac8c9234c84e128c601376b0,
+        type: 3}
+    - target: {fileID: 8239931681573254270, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 128.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 228.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 21.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340421, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1184.2
       objectReference: {fileID: 0}
     - target: {fileID: 8239931682428340426, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_Text
-      value: The force of the gushing water plummets our hero and the pesky cat catcher
+      value: the force of the gushing water plummets our hero and the pesky cat catcher
         through the drainage system!
       objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340426, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682428340426, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8f16188dac8c9234c84e128c601376b0,
+        type: 3}
     - target: {fileID: 8239931682478725496, guid: 73af00e3649012642be71851c86ab1a3,
         type: 3}
       propertyPath: m_Sprite
@@ -2217,6 +2402,37 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Text
+      value: continue >
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239931682810039791, guid: 73af00e3649012642be71851c86ab1a3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8f16188dac8c9234c84e128c601376b0,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73af00e3649012642be71851c86ab1a3, type: 3}
 --- !u!1 &728011369
