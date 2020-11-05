@@ -6,7 +6,7 @@ public class LevelTransition : MonoBehaviour
 {
     public GameObject houseDoor;
     public GameObject introPanel;
-    private float houseDoorAnim = 2f;
+    private float houseDoorAnim = 1f;
 
     public void OnTriggerEnter2D(Collider2D other)
     {

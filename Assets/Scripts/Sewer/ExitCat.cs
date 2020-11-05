@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ExitCat : MonoBehaviour
 {
+    public GameObject catCatcher;
     public Platforms platform;
     public GameObject cutScene;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,6 +14,7 @@ public class ExitCat : MonoBehaviour
             if (platform.escapeCat)
             {
                 cutScene.SetActive(true);
+                catCatcher.SetActive(false);
             }
             else
             {
