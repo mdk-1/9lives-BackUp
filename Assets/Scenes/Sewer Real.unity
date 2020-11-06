@@ -1146,6 +1146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dee85eea3fe5ba4f9a709c8aa3c99f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  catCatcher: {fileID: 249721235}
   platform: {fileID: 101925540}
   cutScene: {fileID: 1898003828}
 --- !u!61 &411249947
