@@ -25,6 +25,7 @@ public class EnemyManager : MonoBehaviour
     public GameObject[] waypoint; //waypoints for patrol state
     public GameObject player; //referencing player object
     public GameObject bloodSplat; //reference for particle effect 
+    public AudioSource catSound;
 
     #endregion
 
@@ -142,6 +143,7 @@ public class EnemyManager : MonoBehaviour
     public void OnAiDeath()
     {
         Instantiate(bloodSplat, transform.position, Quaternion.identity);
+        catSound.Play();
         anim.SetBool("IsRun", false);
         Destroy(this.gameObject);
     }

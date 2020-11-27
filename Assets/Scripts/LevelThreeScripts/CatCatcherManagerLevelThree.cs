@@ -6,7 +6,7 @@ public class CatCatcherManagerLevelThree : MonoBehaviour
 {
     public GameObject player;
     public GameObject bloodEffect;
-    private float aiSpeed = 15f;
+    private float aiSpeed = 20f;
 
     // Update is called once per frame
     void Update()

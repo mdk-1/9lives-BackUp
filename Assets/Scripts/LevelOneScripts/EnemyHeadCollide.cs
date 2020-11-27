@@ -13,6 +13,7 @@ public class EnemyHeadCollide : MonoBehaviour
     private bool aiInvuln;
 
     public GameObject bloodSplat; //reference for particle effect
+    public AudioSource catSound;
 
     private void Awake()
     {
@@ -30,6 +31,7 @@ public class EnemyHeadCollide : MonoBehaviour
                 {
                     enemyManager.aiHealth -= 1;
                     Instantiate(bloodSplat, transform.position, Quaternion.identity);
+                    catSound.Play();
                     TakeDamage();
                     enemyManager.OnAiHit();
                 }
